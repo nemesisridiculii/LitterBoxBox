@@ -41,8 +41,8 @@
         {
             "atomType": "Rectangle",
             "name": "Rectangle",
-            "x": 0.14479166666666668,
-            "y": 0.31521739130434784,
+            "x": 0.18802083333333333,
+            "y": 0.328804347826087,
             "uniqueID": 508441,
             "ioValues": [
                 {
@@ -83,6 +83,40 @@
                     "ioValue": 19
                 }
             ]
+        },
+        {
+            "atomType": "Equation",
+            "name": "Equation",
+            "x": 0.35781250000000003,
+            "y": 0.47010869565217395,
+            "uniqueID": 356501,
+            "ioValues": [
+                {
+                    "name": "x",
+                    "ioValue": 1
+                },
+                {
+                    "name": "y",
+                    "ioValue": 1
+                }
+            ],
+            "currentEquation": "x + y"
+        },
+        {
+            "atomType": "Constant",
+            "name": "TopOverhang",
+            "x": 0.13958333333333334,
+            "y": 0.5896739130434783,
+            "uniqueID": 412096,
+            "ioValues": [
+                {
+                    "name": "number",
+                    "ioValue": 10
+                }
+            ],
+            "evolve": false,
+            "min": 0,
+            "max": 20
         },
         {
             "atomType": "Output",
