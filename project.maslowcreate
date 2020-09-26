@@ -8,71 +8,9 @@
     "allAtoms": [
         {
             "atomType": "Constant",
-            "name": "Depth",
-            "x": 0.04479166666666667,
-            "y": 0.22554347826086957,
-            "uniqueID": 455024,
-            "ioValues": [
-                {
-                    "name": "number",
-                    "ioValue": 600
-                }
-            ],
-            "evolve": false,
-            "min": 0,
-            "max": 20
-        },
-        {
-            "atomType": "Rectangle",
-            "name": "Rectangle",
-            "x": 0.18802083333333333,
-            "y": 0.328804347826087,
-            "uniqueID": 508441,
-            "ioValues": [
-                {
-                    "name": "x length",
-                    "ioValue": 10
-                },
-                {
-                    "name": "y length",
-                    "ioValue": 10
-                }
-            ]
-        },
-        {
-            "atomType": "Constant",
-            "name": "Width",
-            "x": 0.04427083333333333,
-            "y": 0.391304347826087,
-            "uniqueID": 258036,
-            "ioValues": [
-                {
-                    "name": "number",
-                    "ioValue": 82
-                }
-            ],
-            "evolve": false,
-            "min": 0,
-            "max": 20
-        },
-        {
-            "atomType": "Extrude",
-            "name": "Extrude",
-            "x": 0.415625,
-            "y": 0.19021739130434784,
-            "uniqueID": 623776,
-            "ioValues": [
-                {
-                    "name": "height",
-                    "ioValue": 19
-                }
-            ]
-        },
-        {
-            "atomType": "Constant",
             "name": "PlywoodThickness",
-            "x": 0.04375,
-            "y": 0.5788043478260869,
+            "x": 0.04947916666666667,
+            "y": 0.10869565217391305,
             "uniqueID": 262850,
             "ioValues": [
                 {
@@ -85,10 +23,60 @@
             "max": 20
         },
         {
+            "atomType": "Constant",
+            "name": "Depth",
+            "x": 0.0421875,
+            "y": 0.33695652173913043,
+            "uniqueID": 455024,
+            "ioValues": [
+                {
+                    "name": "number",
+                    "ioValue": 600
+                }
+            ],
+            "evolve": false,
+            "min": 0,
+            "max": 20
+        },
+        {
             "atomType": "Equation",
             "name": "Equation",
-            "x": 0.2078125,
-            "y": 0.7119565217391305,
+            "x": 0.16979166666666667,
+            "y": 0.328804347826087,
+            "uniqueID": 686135,
+            "ioValues": [
+                {
+                    "name": "d",
+                    "ioValue": 600
+                },
+                {
+                    "name": "t",
+                    "ioValue": 19
+                }
+            ],
+            "currentEquation": "d-t"
+        },
+        {
+            "atomType": "Constant",
+            "name": "Width",
+            "x": 0.04479166666666667,
+            "y": 0.5217391304347826,
+            "uniqueID": 258036,
+            "ioValues": [
+                {
+                    "name": "number",
+                    "ioValue": 82
+                }
+            ],
+            "evolve": false,
+            "min": 0,
+            "max": 20
+        },
+        {
+            "atomType": "Equation",
+            "name": "Equation",
+            "x": 0.15885416666666666,
+            "y": 0.5108695652173914,
             "uniqueID": 569218,
             "ioValues": [
                 {
@@ -101,6 +89,36 @@
                 }
             ],
             "currentEquation": "d - t"
+        },
+        {
+            "atomType": "Rectangle",
+            "name": "Rectangle",
+            "x": 0.31354166666666666,
+            "y": 0.5434782608695652,
+            "uniqueID": 508441,
+            "ioValues": [
+                {
+                    "name": "x length",
+                    "ioValue": 63
+                },
+                {
+                    "name": "y length",
+                    "ioValue": 581
+                }
+            ]
+        },
+        {
+            "atomType": "Extrude",
+            "name": "Extrude",
+            "x": 0.5380208333333333,
+            "y": 0.45652173913043476,
+            "uniqueID": 623776,
+            "ioValues": [
+                {
+                    "name": "height",
+                    "ioValue": 19
+                }
+            ]
         },
         {
             "atomType": "Constant",
@@ -128,20 +146,6 @@
     ],
     "allConnectors": [
         {
-            "ap1Name": "geometry",
-            "ap2Name": "geometry",
-            "ap2Primary": true,
-            "ap1ID": 508441,
-            "ap2ID": 623776
-        },
-        {
-            "ap1Name": "number",
-            "ap2Name": "d",
-            "ap2Primary": false,
-            "ap1ID": 258036,
-            "ap2ID": 569218
-        },
-        {
             "ap1Name": "number",
             "ap2Name": "height",
             "ap2Primary": false,
@@ -154,6 +158,48 @@
             "ap2Primary": false,
             "ap1ID": 262850,
             "ap2ID": 569218
+        },
+        {
+            "ap1Name": "number",
+            "ap2Name": "t",
+            "ap2Primary": false,
+            "ap1ID": 262850,
+            "ap2ID": 686135
+        },
+        {
+            "ap1Name": "number",
+            "ap2Name": "d",
+            "ap2Primary": false,
+            "ap1ID": 455024,
+            "ap2ID": 686135
+        },
+        {
+            "ap1Name": "result",
+            "ap2Name": "y length",
+            "ap2Primary": false,
+            "ap1ID": 686135,
+            "ap2ID": 508441
+        },
+        {
+            "ap1Name": "number",
+            "ap2Name": "d",
+            "ap2Primary": false,
+            "ap1ID": 258036,
+            "ap2ID": 569218
+        },
+        {
+            "ap1Name": "result",
+            "ap2Name": "x length",
+            "ap2Primary": false,
+            "ap1ID": 569218,
+            "ap2ID": 508441
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "geometry",
+            "ap2Primary": true,
+            "ap1ID": 508441,
+            "ap2ID": 623776
         }
     ],
     "fileTypeVersion": 1,
