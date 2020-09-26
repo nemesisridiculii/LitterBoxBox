@@ -85,24 +85,6 @@
             ]
         },
         {
-            "atomType": "Equation",
-            "name": "Equation",
-            "x": 0.35781250000000003,
-            "y": 0.47010869565217395,
-            "uniqueID": 356501,
-            "ioValues": [
-                {
-                    "name": "x",
-                    "ioValue": 1
-                },
-                {
-                    "name": "y",
-                    "ioValue": 1
-                }
-            ],
-            "currentEquation": "x + y"
-        },
-        {
             "atomType": "Constant",
             "name": "TopOverhang",
             "x": 0.13958333333333334,
@@ -117,6 +99,76 @@
             "evolve": false,
             "min": 0,
             "max": 20
+        },
+        {
+            "atomType": "Equation",
+            "name": "Equation",
+            "x": 0.3885416666666667,
+            "y": 0.6521739130434783,
+            "uniqueID": 569218,
+            "ioValues": [
+                {
+                    "name": "d",
+                    "ioValue": 1
+                },
+                {
+                    "name": "i",
+                    "ioValue": 1
+                },
+                {
+                    "name": "m",
+                    "ioValue": 1
+                },
+                {
+                    "name": "o",
+                    "ioValue": 1
+                },
+                {
+                    "name": "v",
+                    "ioValue": 1
+                },
+                {
+                    "name": "e",
+                    "ioValue": 1
+                },
+                {
+                    "name": "r",
+                    "ioValue": 1
+                },
+                {
+                    "name": "h",
+                    "ioValue": 1
+                },
+                {
+                    "name": "a",
+                    "ioValue": 1
+                },
+                {
+                    "name": "n",
+                    "ioValue": 1
+                },
+                {
+                    "name": "g",
+                    "ioValue": 1
+                },
+                {
+                    "name": "t",
+                    "ioValue": 1
+                },
+                {
+                    "name": "c",
+                    "ioValue": 1
+                },
+                {
+                    "name": "k",
+                    "ioValue": 1
+                },
+                {
+                    "name": "s",
+                    "ioValue": 1
+                }
+            ],
+            "currentEquation": "dim - overhang - thickness"
         },
         {
             "atomType": "Output",
