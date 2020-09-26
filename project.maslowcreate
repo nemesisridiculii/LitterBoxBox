@@ -1,20 +1,107 @@
 {
     "atomType": "Molecule",
-    "name": "LitterBoxBox",
+    "name": "Molecule",
     "x": 0,
     "y": 0,
-    "uniqueID": 789468,
     "ioValues": [],
     "topLevel": true,
     "allAtoms": [
         {
+            "atomType": "Constant",
+            "name": "Width",
+            "x": 0.043229166666666666,
+            "y": 0.17663043478260868,
+            "uniqueID": 258036,
+            "ioValues": [
+                {
+                    "name": "number",
+                    "ioValue": 840
+                }
+            ],
+            "evolve": false,
+            "min": 0,
+            "max": 20
+        },
+        {
+            "atomType": "Constant",
+            "name": "PlywoodThickness",
+            "x": 0.20208333333333334,
+            "y": 0.1358695652173913,
+            "uniqueID": 262850,
+            "ioValues": [
+                {
+                    "name": "number",
+                    "ioValue": 19
+                }
+            ],
+            "evolve": false,
+            "min": 0,
+            "max": 20
+        },
+        {
+            "atomType": "Rectangle",
+            "name": "Rectangle",
+            "x": 0.14479166666666668,
+            "y": 0.31521739130434784,
+            "uniqueID": 508441,
+            "ioValues": [
+                {
+                    "name": "x length",
+                    "ioValue": 600
+                },
+                {
+                    "name": "y length",
+                    "ioValue": 840
+                }
+            ]
+        },
+        {
+            "atomType": "Constant",
+            "name": "Depth",
+            "x": 0.04427083333333333,
+            "y": 0.42934782608695654,
+            "uniqueID": 455024,
+            "ioValues": [
+                {
+                    "name": "number",
+                    "ioValue": 600
+                }
+            ],
+            "evolve": false,
+            "min": 0,
+            "max": 20
+        },
+        {
             "atomType": "Output",
             "name": "Output",
-            "x": 0.9895833333333333,
-            "y": 0.5,
+            "x": 0.9510416666666667,
+            "y": 0.3804347826086957,
             "ioValues": []
         }
     ],
-    "allConnectors": [],
-    "fileTypeVersion": 1
+    "allConnectors": [
+        {
+            "ap1Name": "number",
+            "ap2Name": "y length",
+            "ap2Primary": false,
+            "ap1ID": 258036,
+            "ap2ID": 508441
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "number or geometry",
+            "ap2Primary": false,
+            "ap1ID": 508441
+        },
+        {
+            "ap1Name": "number",
+            "ap2Name": "x length",
+            "ap2Primary": false,
+            "ap1ID": 455024,
+            "ap2ID": 508441
+        }
+    ],
+    "fileTypeVersion": 1,
+    "filetypeVersion": 1,
+    "circleSegmentSize": 2
 }
